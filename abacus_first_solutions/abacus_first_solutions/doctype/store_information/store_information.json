@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "autoname": "field:store_id",
+ "creation": "2019-12-12 15:49:01.506466",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dd_section",
+  "store_id",
+  "quickbooks_code",
+  "doing_business_as",
+  "business_legal_name",
+  "fein",
+  "column_break_6",
+  "state_id",
+  "sales_tax_no",
+  "legal_address",
+  "withholding_id",
+  "suid",
+  "address_section",
+  "street",
+  "city",
+  "column_break_17",
+  "state",
+  "zip"
+ ],
+ "fields": [
+  {
+   "fieldname": "quickbooks_code",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "QuickBooks Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_legal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Legal Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doing_business_as",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doing Business As",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fein",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "FEIN",
+   "length": 9,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_tax_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Tax No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "withholding_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Withholding ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "suid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SUID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "legal_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Address",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Store's Business Address"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ZIP"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dd_section",
+   "fieldtype": "Section Break",
+   "label": "Store Information"
+  },
+  {
+   "fieldname": "store_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Store ID",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-12 18:11:59.503328",
+ "modified_by": "Administrator",
+ "module": "Abacus First Solutions",
+ "name": "Store Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "store_id",
+ "track_changes": 1
+}
