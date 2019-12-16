@@ -18,10 +18,10 @@
   "legal_address",
   "withholding_id",
   "suid",
-  "section_break_13",
-  "business_address",
-  "section_break_15",
-  "partners_information"
+  "store_address_section",
+  "address",
+  "store_partner_information_section",
+  "partner_info"
  ],
  "fields": [
   {
@@ -106,32 +106,34 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_13",
-   "fieldtype": "Section Break"
+   "fieldname": "address",
+   "fieldtype": "Table",
+   "options": "Addresses",
+   "reqd": 1
   },
   {
    "collapsible": 1,
-   "fieldname": "business_address",
-   "fieldtype": "Table",
-   "label": "Store's Business Address",
-   "options": "Addresses",
-   "reqd": 1,
-   "set_only_once": 1
+   "fieldname": "store_address_section",
+   "fieldtype": "Section Break",
+   "label": "Store Address"
   },
   {
-   "fieldname": "section_break_15",
-   "fieldtype": "Section Break"
+   "allow_in_quick_entry": 1,
+   "collapsible": 1,
+   "fieldname": "store_partner_information_section",
+   "fieldtype": "Section Break",
+   "label": "Store Partner Information"
   },
   {
-   "fieldname": "partners_information",
+   "allow_in_quick_entry": 1,
+   "fieldname": "partner_info",
    "fieldtype": "Table",
-   "label": "Partner(s) Information",
-   "options": "Partner Information",
+   "options": "Store Partners",
    "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-15 13:02:51.266402",
+ "modified": "2019-12-16 15:47:50.873076",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Store Information",

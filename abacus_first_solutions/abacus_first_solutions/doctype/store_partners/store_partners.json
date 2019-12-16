@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "creation": "2019-12-16 15:27:19.550040",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "ssn",
+  "driving_license",
+  "column_break_4",
+  "birth_date",
+  "wef_date",
+  "share",
+  "partners_address_section",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ssn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SSN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driving_license",
+   "fieldtype": "Data",
+   "label": "Driving License",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Table",
+   "options": "Addresses",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "partners_address_section",
+   "fieldtype": "Section Break",
+   "label": "Partner's Address"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Birth Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "wef_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "WEF Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "share",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Share (%)",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-16 15:45:51.101132",
+ "modified_by": "Administrator",
+ "module": "Abacus First Solutions",
+ "name": "Store Partners",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

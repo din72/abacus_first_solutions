@@ -1,6 +1,6 @@
 {
  "actions": [],
- "creation": "2019-12-15 12:27:12.638898",
+ "creation": "2019-12-16 15:16:13.774148",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -40,15 +40,26 @@
    "reqd": 1
   }
  ],
- "istable": 1,
  "links": [],
- "modified": "2019-12-15 13:03:23.350558",
+ "modified": "2019-12-16 15:16:13.774148",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Addresses",
- "nsm_parent_field": "parent_addresses",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
