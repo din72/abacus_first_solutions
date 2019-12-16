@@ -10,6 +10,7 @@ def get_data():
             {
               "type": "doctype",
               "name": "Store Information",
+              "onboard": 1,
               "label": _("Store Information"),
               "description": _("Articles which members issue and return."),
             },
@@ -21,20 +22,22 @@ def get_data():
             # },
             {
               "type": "doctype",
-              "name": "District",
-              "label": _("District"),
-              "description": _("Articles which members issue and return."),
-            },
-            {
-              "type": "doctype",
               "name": "District Manager",
+              "onboard": 1,
               "label": _("District Manager"),
               "description": _("Articles which members issue and return."),
             },
             {
               "type": "doctype",
               "name": "Shift Manager",
+              "onboard": 1,
               "label": _("Shift Manager"),
+              "description": _("Articles which members issue and return."),
+            },
+            {
+              "type": "doctype",
+              "name": "District",
+              "label": _("District"),
               "description": _("Articles which members issue and return."),
             },
 

@@ -7,7 +7,7 @@ def get_data():
 		{
 			"module_name": "Abacus First Solutions",
 			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"icon": "octicon octicon-watch",
 			"type": "module",
 			"label": _("Abacus First Solutions")
 		}
