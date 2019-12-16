@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "autoname": "naming_series",
+ "creation": "2019-12-16 11:58:46.158348",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info",
+  "naming_series",
+  "dm_name",
+  "district_name",
+  "phone",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "dm_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DM Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District Name",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_info",
+   "fieldtype": "Section Break",
+   "label": "District Manager",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "options": "DIST-.MNGR.-",
+   "set_only_once": 1
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-16 12:59:18.646448",
+ "modified_by": "Administrator",
+ "module": "Abacus First Solutions",
+ "name": "District Manager",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "dm_name",
+ "track_changes": 1
+}

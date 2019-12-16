@@ -18,12 +18,10 @@
   "legal_address",
   "withholding_id",
   "suid",
-  "address_section",
-  "street",
-  "city",
-  "column_break_17",
-  "state",
-  "zip"
+  "section_break_13",
+  "business_address",
+  "section_break_15",
+  "partners_information"
  ],
  "fields": [
   {
@@ -91,43 +89,6 @@
    "reqd": 1
   },
   {
-   "collapsible": 1,
-   "fieldname": "address_section",
-   "fieldtype": "Section Break",
-   "label": "Store's Business Address"
-  },
-  {
-   "fieldname": "street",
-   "fieldtype": "Data",
-   "label": "Street"
-  },
-  {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "City"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "State"
-  },
-  {
-   "fieldname": "zip",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "ZIP"
-  },
-  {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "dd_section",
    "fieldtype": "Section Break",
    "label": "Store Information"
@@ -139,10 +100,38 @@
    "label": "Store ID",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "business_address",
+   "fieldtype": "Table",
+   "label": "Store's Business Address",
+   "options": "Addresses",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "partners_information",
+   "fieldtype": "Table",
+   "label": "Partner(s) Information",
+   "options": "Partner Information",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-12 18:11:59.503328",
+ "modified": "2019-12-15 13:02:51.266402",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Store Information",
@@ -161,7 +150,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "store_id",

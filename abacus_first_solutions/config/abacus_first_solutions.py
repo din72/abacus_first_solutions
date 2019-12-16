@@ -13,6 +13,30 @@ def get_data():
               "label": _("Store Information"),
               "description": _("Articles which members issue and return."),
             },
+            # {
+            #   "type": "doctype",
+            #   "name": "Partner Information",
+            #   "label": _("Partner Information"),
+            #   "description": _("Articles which members issue and return."),
+            # },
+            {
+              "type": "doctype",
+              "name": "District",
+              "label": _("District"),
+              "description": _("Articles which members issue and return."),
+            },
+            {
+              "type": "doctype",
+              "name": "District Manager",
+              "label": _("District Manager"),
+              "description": _("Articles which members issue and return."),
+            },
+            {
+              "type": "doctype",
+              "name": "Shift Manager",
+              "label": _("Shift Manager"),
+              "description": _("Articles which members issue and return."),
+            },
 
           ]
       }

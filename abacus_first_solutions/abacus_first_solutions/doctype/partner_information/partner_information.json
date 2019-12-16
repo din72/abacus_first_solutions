@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "creation": "2019-12-15 12:21:20.509094",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_initial",
+  "last_name",
+  "ssn",
+  "driving_license"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_initial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle Initial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ssn",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "SSN",
+   "length": 9,
+   "reqd": 1
+  },
+  {
+   "fieldname": "driving_license",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Driving License",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2019-12-15 13:06:35.865971",
+ "modified_by": "Administrator",
+ "module": "Abacus First Solutions",
+ "name": "Partner Information",
+ "nsm_parent_field": "parent_partner_information",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
