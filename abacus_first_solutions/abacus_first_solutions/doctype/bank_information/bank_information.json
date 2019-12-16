@@ -1,56 +1,58 @@
 {
  "actions": [],
- "creation": "2019-12-16 15:16:13.774148",
+ "creation": "2019-12-16 19:03:51.724917",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "address_details",
-  "street",
-  "city",
-  "state",
-  "zip"
+  "bank_name",
+  "account_type",
+  "account_title",
+  "bank_routing",
+  "account_number"
  ],
  "fields": [
   {
-   "fieldname": "street",
+   "fieldname": "bank_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Street",
+   "label": "Bank Name",
    "reqd": 1
   },
   {
-   "fieldname": "city",
-   "fieldtype": "Data",
+   "fieldname": "account_type",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "City",
+   "label": "Account Type",
+   "options": "\nChecking\nSavings\nOther",
    "reqd": 1
   },
   {
-   "fieldname": "state",
+   "fieldname": "account_title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "State",
+   "label": "Account Title",
    "reqd": 1
   },
   {
-   "fieldname": "zip",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "ZIP",
+   "fieldname": "bank_routing",
+   "fieldtype": "Int",
+   "label": "Bank Routing",
+   "length": 9,
    "reqd": 1
   },
   {
-   "fieldname": "address_details",
-   "fieldtype": "Section Break",
-   "options": "fa fa-map-marker"
+   "fieldname": "account_number",
+   "fieldtype": "Int",
+   "label": "Account Number",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-16 18:49:32.768600",
+ "modified": "2019-12-16 19:10:51.193324",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
- "name": "Addresses",
+ "name": "Bank Information",
  "owner": "Administrator",
  "permissions": [
   {

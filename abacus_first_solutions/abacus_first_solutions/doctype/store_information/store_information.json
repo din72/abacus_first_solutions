@@ -18,6 +18,8 @@
   "legal_address",
   "withholding_id",
   "suid",
+  "bank_details_section",
+  "bank_details",
   "store_address_section",
   "address",
   "store_partner_information_section",
@@ -130,10 +132,22 @@
    "fieldtype": "Table",
    "options": "Store Partners",
    "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank_details",
+   "fieldtype": "Table",
+   "options": "Bank Information",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-16 15:47:50.873076",
+ "modified": "2019-12-16 19:09:35.252305",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Store Information",
