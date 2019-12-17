@@ -8,19 +8,15 @@
  "field_order": [
   "basic_info",
   "naming_series",
-  "dm_name",
+  "first_name",
+  "middle_initial",
+  "last_name",
+  "column_break_5",
   "district_name",
   "phone",
   "email"
  ],
  "fields": [
-  {
-   "fieldname": "dm_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "DM Name",
-   "reqd": 1
-  },
   {
    "fieldname": "district_name",
    "fieldtype": "Link",
@@ -34,6 +30,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Phone",
+   "options": "Phone",
    "reqd": 1
   },
   {
@@ -56,10 +53,34 @@
    "label": "ID",
    "options": "DIST-.MNGR.-",
    "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "middle_initial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle Initial"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-16 12:59:18.646448",
+ "modified": "2019-12-17 11:12:43.483119",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "District Manager",
@@ -78,9 +99,8 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "dm_name",
+ "title_field": "first_name",
  "track_changes": 1
 }

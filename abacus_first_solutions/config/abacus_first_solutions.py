@@ -14,12 +14,13 @@ def get_data():
               "label": _("Store Information"),
               "description": _("Articles which members issue and return."),
             },
-            # {
-            #   "type": "doctype",
-            #   "name": "Partner Information",
-            #   "label": _("Partner Information"),
-            #   "description": _("Articles which members issue and return."),
-            # },
+            {
+              "type": "doctype",
+              "name": "Abacus Supervisor",
+              "onboard": 1,
+              "label": _("Abacus Supervisor"),
+              "description": _("Articles which members issue and return."),
+            },
             {
               "type": "doctype",
               "name": "District Manager",

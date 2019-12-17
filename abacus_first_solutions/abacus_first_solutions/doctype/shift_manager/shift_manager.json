@@ -9,8 +9,12 @@
   "basic_info",
   "id",
   "district_manager",
+  "shift",
+  "first_name",
+  "middle_initial",
+  "column_break_5",
+  "last_name",
   "district",
-  "sm_name",
   "phone",
   "email"
  ],
@@ -33,6 +37,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Phone",
+   "options": "Phone",
    "reqd": 1
   },
   {
@@ -44,7 +49,7 @@
    "reqd": 1
   },
   {
-   "fetch_from": "district_manager.dm_name",
+   "fetch_from": "district_manager.first_name",
    "fieldname": "district_manager",
    "fieldtype": "Link",
    "label": "District Manager",
@@ -52,21 +57,46 @@
    "reqd": 1
   },
   {
-   "fieldname": "sm_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Shift Manager Name",
-   "reqd": 1
-  },
-  {
    "fetch_from": "district_manager.district_name",
    "fieldname": "district",
    "fieldtype": "Read Only",
    "label": "District"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "middle_initial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle Initial"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shift",
+   "options": "\nMorning\nEvening",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-16 13:07:09.278637",
+ "modified": "2019-12-17 11:32:26.535660",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Shift Manager",
@@ -85,9 +115,8 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "sm_name",
+ "title_field": "first_name",
  "track_changes": 1
 }

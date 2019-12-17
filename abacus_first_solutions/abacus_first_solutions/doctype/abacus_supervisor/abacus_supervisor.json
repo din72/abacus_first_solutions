@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "field:supervisor_id",
+ "creation": "2019-12-17 11:36:03.450984",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "abacus_supervisor_information_section",
+  "supervisor_id",
+  "supervisor_name",
+  "store_shift_manager",
+  "column_break_6",
+  "shift_manager_email",
+  "shift",
+  "district"
+ ],
+ "fields": [
+  {
+   "fieldname": "supervisor_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supervisor ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "supervisor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supervisor Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "store_shift_manager.first_name",
+   "fieldname": "store_shift_manager",
+   "fieldtype": "Link",
+   "label": "Store Shift Manager",
+   "options": "Shift Manager",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "store_shift_manager.district",
+   "fieldname": "district",
+   "fieldtype": "Read Only",
+   "label": "District"
+  },
+  {
+   "fetch_from": "store_shift_manager.shift",
+   "fieldname": "shift",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Shift"
+  },
+  {
+   "fieldname": "abacus_supervisor_information_section",
+   "fieldtype": "Section Break",
+   "label": "Abacus Supervisor Information"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "store_shift_manager.email",
+   "fieldname": "shift_manager_email",
+   "fieldtype": "Read Only",
+   "label": "Shift Manager Email"
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-17 11:53:03.940242",
+ "modified_by": "Administrator",
+ "module": "Abacus First Solutions",
+ "name": "Abacus Supervisor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "supervisor_name",
+ "track_changes": 1
+}
