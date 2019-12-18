@@ -10,6 +10,7 @@
   "supervisor_id",
   "supervisor_name",
   "store_shift_manager",
+  "shift_manager_full_name",
   "column_break_6",
   "shift_manager_email",
   "shift",
@@ -66,10 +67,15 @@
    "fieldname": "shift_manager_email",
    "fieldtype": "Read Only",
    "label": "Shift Manager Email"
+  },
+  {
+   "fieldname": "shift_manager_full_name",
+   "fieldtype": "Read Only",
+   "label": "Shift Manager Full name"
   }
  ],
  "links": [],
- "modified": "2019-12-17 11:53:03.940242",
+ "modified": "2019-12-17 13:16:43.265474",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Abacus Supervisor",

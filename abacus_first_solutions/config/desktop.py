@@ -9,6 +9,6 @@ def get_data():
 			"color": "grey",
 			"icon": "octicon octicon-watch",
 			"type": "module",
-			"label": _("Abacus First Solutions")
+			"label": _("Master Data")
 		}
 	]
