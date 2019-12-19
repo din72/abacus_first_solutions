@@ -1,41 +1,26 @@
 {
  "actions": [],
- "creation": "2019-12-18 12:27:24.457256",
+ "autoname": "field:team",
+ "creation": "2019-12-18 21:39:25.722295",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "team_name",
-  "team_member",
-  "team_member_name"
+  "team"
  ],
  "fields": [
   {
-   "fieldname": "team_name",
+   "fieldname": "team",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Team Name",
+   "label": "Team",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fetch_from": "team_member.email",
-   "fieldname": "team_member",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Team Member",
-   "options": "User",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "team_member.first_name",
-   "fieldname": "team_member_name",
-   "fieldtype": "Read Only",
-   "label": "Team Member Name"
   }
  ],
+ "hide_toolbar": 1,
  "links": [],
- "modified": "2019-12-18 12:33:11.229593",
+ "modified": "2019-12-18 23:04:09.972681",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Team",
@@ -56,6 +41,7 @@
  ],
  "quick_entry": 1,
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
+ "title_field": "team",
  "track_changes": 1
 }

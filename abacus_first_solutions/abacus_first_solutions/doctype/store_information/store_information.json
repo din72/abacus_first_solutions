@@ -12,6 +12,7 @@
   "doing_business_as",
   "business_legal_name",
   "fein",
+  "team_dedicated",
   "column_break_6",
   "state_id",
   "sales_tax_no",
@@ -144,10 +145,20 @@
    "fieldtype": "Table",
    "options": "Bank Information",
    "reqd": 1
+  },
+  {
+   "fetch_from": "team_dedicated.team",
+   "fieldname": "team_dedicated",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Team Dedicated",
+   "options": "Team",
+   "reqd": 1
   }
  ],
+ "icon": "fa fa-user",
  "links": [],
- "modified": "2019-12-16 19:09:35.252305",
+ "modified": "2019-12-18 23:17:26.305263",
  "modified_by": "Administrator",
  "module": "Abacus First Solutions",
  "name": "Store Information",
@@ -166,6 +177,7 @@
    "write": 1
   }
  ],
+ "search_fields": "store_id",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "store_id",

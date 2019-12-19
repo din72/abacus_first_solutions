@@ -16,9 +16,9 @@ def get_data():
             },
             {
               "type": "doctype",
-              "name": "Abacus Supervisor",
+              "name": "Team Member",
               "onboard": 1,
-              "label": _("Abacus Supervisor"),
+              "label": _("Team Member"),
               "description": _("Articles which members issue and return."),
             },
             {
